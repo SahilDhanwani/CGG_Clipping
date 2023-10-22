@@ -30,7 +30,7 @@ vector<line_> take_input()
     int a, b, c, d;
     while (n--)
     {
-        cout << "Enter the four coordinates: ";
+        cout << "Enter the four coordinates (X1,Y1,X2,Y2) : ";
         cin >> a >> b >> c >> d;
         line_ l1(a, b, c, d);
         v.push_back(l1);
