@@ -69,7 +69,7 @@ vector<line_> take_input_window()
     return v;
 }
 
-void Sahil_D(int &x1, int &y1, int &x2, int &y2, int xmin, int ymin, int xmax, int ymax)
+void clip_algo(int &x1, int &y1, int &x2, int &y2, int xmin, int ymin, int xmax, int ymax)
 {
     int code1 = 0, code2 = 0, codeOut;
     bool accept = false, done = false;
@@ -171,7 +171,7 @@ void draw_poly(vector<line_> v,int time = 0, int xmin = 0, int ymin = 0, int xma
         int y2 = v[i].y2;
 
         delay(time);
-        Sahil_D(x1, y1, x2, y2, xmin, ymin, xmax, ymax);
+        clip_algo(x1, y1, x2, y2, xmin, ymin, xmax, ymax);
     }
 }
 
