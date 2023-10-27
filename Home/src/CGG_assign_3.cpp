@@ -138,15 +138,16 @@ int main()
     int n;
     vector<line_> v1;
     v1 = take_input();
-    initgraph(&gd, &gm, data);
-    draw_poly(v1);
-    getch();
-    closegraph();
-
     cout << "Now for clipping window: ";
     vector<line_> v2;
     v2 = take_input();
     initgraph(&gd, &gm, data);
+    draw_poly(v1);
+    draw_poly(v2);
+    getch();
+    closegraph();
+
+        initgraph(&gd, &gm, data);
     draw_poly(v2);
     draw_poly(v1, v2[0].x1, v2[0].y1, v2[1].x2, v2[1].y2);
     getch();
